@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+  <form action="#" method="POST">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required minlength="3"><br>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required minlength="8"><br>
+
+    <label for="level-beginner">Beginner</label>
+    <input type="radio" id="level-beginner" name="level" value="beginner" required>
+    <label for="level-intermediate">Intermediate</label>
+    <input type="radio" id="level-intermediate" name="level" value="intermediate">
+    <label for="level-advanced">Advanced</label>
+    <input type="radio" id="level-advanced" name="level" value="advanced"><br>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="">Choose a country</option>
+      <option value="jo">Jordan</option>
+      <option value="sa">Saudi Arabia</option>
+      <option value="eg">Egypt</option>
+      <option value="other">Other</option>
+    </select><br>
+
+    <label for="message">Why do you want to join?</label>
+    <textarea id="message" name="message" rows="4" cols="40" required minlength="10"></textarea><br>
+
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the terms</label><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
